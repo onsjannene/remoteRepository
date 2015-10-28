@@ -14,15 +14,13 @@ public class Calculator {
 		return result;
 		
 	}
-	public Long multiple(Long a,Long b){
-		
-		
-		return a*b;
 	
+	
+	public Double  divide(Double d1, Double d2){
 		
-	}	
-		
-		
+		if(d2==0)
+			throw new IllegalArgumentException("cant divide by 0!!!");
+		return (d1/d2);
 	}
 
-
+}
